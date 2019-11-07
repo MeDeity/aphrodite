@@ -32,22 +32,28 @@ class TextStyles {
       fontSize: Dimens.font_sp14,
       color: Colours.text_dark,
       fontWeight: FontWeight.bold);
+
   static const TextStyle textBoldDark16 = TextStyle(
       fontSize: Dimens.font_sp16,
       color: Colours.text_dark,
       fontWeight: FontWeight.bold);
+
   static const TextStyle textBoldDark18 = TextStyle(
       fontSize: Dimens.font_sp18,
       color: Colours.text_dark,
       fontWeight: FontWeight.bold);
+
   static const TextStyle textBoldDark24 = TextStyle(
       fontSize: 24.0, color: Colours.text_dark, fontWeight: FontWeight.bold);
+
   static const TextStyle textBoldDark26 = TextStyle(
       fontSize: 26.0, color: Colours.text_dark, fontWeight: FontWeight.bold);
+
   static const TextStyle textGray10 = TextStyle(
     fontSize: Dimens.font_sp10,
     color: Colours.text_gray,
   );
+
   static const TextStyle textGray12 = TextStyle(
     fontSize: Dimens.font_sp12,
     color: Colours.text_gray,

@@ -26,31 +26,31 @@ class AppNavigator {
   }
 
   ///携带返回结果
-  static pushResult(BuildContext context, Widget widget,Function function){
+  static pushResult(BuildContext context, Widget widget, Function function) {
     Navigator.push(
-        context,
-        MaterialPageRoute(builder: (BuildContext context) => widget),)
-        .then((result){
-          if(null!=result){
-            function(result);
-          }
-        }).catchError((error){
-          print("$error");
-        });
+      context,
+      MaterialPageRoute(builder: (BuildContext context) => widget),
+    ).then((result) {
+      if (null != result) {
+        function(result);
+      }
+    }).catchError((error) {
+      print("$error");
+    });
   }
 
   //返回上一页面
-  static back(BuildContext context){
+  static back(BuildContext context) {
     Navigator.maybePop(context);
   }
 
   ///返回上一页并附带参数
-  static backResult(BuildContext context, result){
-    Navigator.pop(context,result);
+  static backResult(BuildContext context, result) {
+    Navigator.pop(context, result);
   }
 
   ///返回上一页
-  static pop(BuildContext context){
+  static pop(BuildContext context) {
     Navigator.pop(context);
   }
 }

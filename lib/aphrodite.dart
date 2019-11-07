@@ -1,7 +1,8 @@
 library aphrodite;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'package:aphrodite/res/colors.dart';
+export 'package:aphrodite/res/dimens.dart';
+export 'package:aphrodite/res/resources.dart';
+export 'package:aphrodite/res/styles.dart';
+export 'package:aphrodite/router/app_navigator.dart';
+export 'package:aphrodite/widget/base_dialog.dart';
